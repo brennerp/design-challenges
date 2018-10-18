@@ -1,0 +1,36 @@
+.clock-label {
+  position: relative;
+  flex-shrink: 0;
+  min-width: 320px;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(to right, #bad0c4, #516573);
+
+  .clock-label__triangle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-shrink: 0;
+    width: 0;
+    height: 100%;
+    border-top: 0px solid transparent;
+    border-bottom: 180px solid transparent;
+    border-right: 100px solid #292e4b;
+  }
+
+  .clock-label__title {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+
+    color: white;
+
+    font-weight: 400;
+    font-size: 36px;
+
+    &::first-line {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}

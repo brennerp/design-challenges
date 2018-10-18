@@ -1,0 +1,41 @@
+.clock-counter {
+  background-color: #292e4b;
+  margin: auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+
+  .flex:first-child .clock-counter__info:first-child {
+    margin-left: 0;
+  }
+
+  .clock-counter__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    span[id$="number"] {
+      display: block;
+      font-size: 48px;
+      font-weight: 400;
+    }
+
+    span[id$="label"] {
+      display: block;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .clock-counter__spacer {
+    font-weight: 800;
+    font-size: 24px;
+  }
+}

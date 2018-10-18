@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400");
+@import "./clockLabel.scss";
+@import "./clockCounter.scss";
+
+html,
+body {
+  font-family: "Nunito", "Helvetica";
+}
+
+.clock-container {
+  height: 180px;
+  width: 100%;
+  background-color: #292e4b;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+  .clock-container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    .clock-label {
+      display: inline-block;
+      height: auto;
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 5px 40px;
+      text-align: left;
+      .clock-label__title {
+        display: inline-block;
+        position: static;
+      }
+      .clock-label__triangle {
+        display: none;
+      }
+    }
+
+    .clock-counter {
+      height: 100%;
+      width: 100%;
+      margin: 10px 0;
+      padding: 5px 40px;
+    }
+  }
+}
